@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зворотній зв'язок - LinguaHub</title>
+</head>
+<body>
+    <header>
+        <h1>🌐 LinguaHub</h1>
+        <p>Веб-портал для вивчення іноземних мов</p>
+        <a href="index.html">← Повернутись на головну сторінку</a>
+    </header>
+
+    <main>
+        <h2>Форма зворотнього зв'язку</h2>
+        
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Персональна інформація</legend>
+                
+                <p>
+                    <label for="lastName">Прізвище: *</label><br>
+                    <input type="text" id="lastName" name="lastName" size="30" required>
+                </p>
+
+                <p>
+                    <label for="firstName">Ім'я: *</label><br>
+                    <input type="text" id="firstName" name="firstName" size="30" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail: *</label><br>
+                    <input type="email" id="email" name="email" size="30" required placeholder="example@email.com">
+                </p>
+
+                <p>
+                    <label for="age">Вік: *</label><br>
+                    <input type="number" id="age" name="age" min="5" max="100" required>
+                </p>
+
+                <p>
+                    <label>Чи вже вивчаєте мову? *</label><br>
+                    <input type="radio" id="pro" name="level" value="pro" required>
+                    <label for="pro">Так, я профі</label><br>
+                    
+                    <input type="radio" id="beginner" name="level" value="beginner" required>
+                    <label for="beginner">Так, але знаю початки</label><br>
+                    
+                    <input type="radio" id="planning" name="level" value="planning" required>
+                    <label for="planning">Планую</label><br>
+                    
+                    <input type="radio" id="no" name="level" value="no" required>
+                    <label for="no">Ні</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="purpose">Мета зворотнього зв'язку: *</label><br>
+                <select id="purpose" name="purpose" required>
+                    <option value="">-- Оберіть мету --</option>
+                    <option value="cooperation">Співпраця</option>
+                    <option value="complaint">Скарга на неякісний контент</option>
+                    <option value="suggestion">Пропозиція</option>
+                    <option value="bug">Наявність помилки</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="details">Детально: *</label><br>
+                <textarea id="details" name="details" rows="6" cols="50" maxlength="500" required 
+                          placeholder="Опишіть вашу пропозицію, скаргу або питання..."></textarea><br>
+                <small>Максимум 500 символів</small>
+            </p>
+
+            <p>
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Я надаю згоду на обробку моєї персональної інформації відповідно до політики конфіденційності</label>
+            </p>
+
+            <p>
+                <input type="submit" value="Відправити">
+                <input type="reset" value="Очистити">
+            </p>
+
+            <p><small>* Обов'язкові поля</small></p>
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        <p><a href="index.html">На головну</a> | <a href="topics.html">Навчальні теми</a></p>
+        <p>© 2024 LinguaHub. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
